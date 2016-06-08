@@ -1,0 +1,244 @@
+*{
+  margin:0px;
+  padding:0px;
+
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  color:white;
+  background-color: black;
+  
+}
+
+a {
+  cursor: pointer;
+}
+
+
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-list li a:hover:not(.active) {
+   background-color: #111;
+}
+
+.nav-list .active {
+    background-color: black;
+}
+
+#home {
+  height: 70vh;
+  background:url('http://www.travelerts.com.tw/eWeb_jy/dm/ror/ROR/ROR-pho/00000223.jpg');
+  background-size: cover;
+  text-align: center;
+  padding-top: 220px;
+}
+
+#home h1 {
+  color:white;
+  font-size: 6em;
+}
+#home h4 {
+  font-size: 2em;
+  margin:15px;
+  color:cyan;
+}
+.linkedin, .github, .facebook{
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin:10px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links li {
+  list-style:none;
+}
+.links a {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.linkedin{
+  background:url('http://icons.iconarchive.com/icons/martz90/circle/512/linkedin-icon.png');
+  background-size: cover;
+}
+.github {
+  background:url('http://alexander-clark.com/github-sociocon.png');
+  background-size: cover;
+
+}
+.facebook {
+  background:url('http://blog.evest.fr/wp-content/uploads/2016/04/logo-facebook-rond.png');
+  background-size: cover;
+}
+
+#aboutme {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding:15px;
+  background-color: black;
+  opacity: 0.8px;
+  
+}
+  
+.my-story {
+  margin: 30px 10px 20px 20px;
+  width: 40%;
+  line-height: 25px;
+}  
+
+.my-story h2 {
+  padding:10px;
+  color:cornflowerblue;
+}
+.my-story p {
+  font-size: 120%;
+  padding:10px;
+}
+
+#download {
+  margin-top: 20px;
+  padding:10px;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color:white;
+  box-shadow: 2px 5px 5px solid gray;
+  text-decoration: none;
+}
+
+.head-shot {
+  padding:10px;
+  margin:40px 20px 20px 10px;
+  
+}
+.head-shot img {
+  height: 230px;
+  width: 160px;
+}
+.personal-information {
+  margin: 20px 10px 20px 10px;
+  line-height: 30px; 
+}
+.personal-information h2 {
+  padding:10px;
+  color:cornflowerblue;
+}
+
+#projects {
+  height: 70vh;
+  background-color: aliceblue;
+  opacity: 0.5px;
+  overflow: hidden;
+}
+
+#projects h2 {
+   color: black;
+   text-align: center;
+   padding-top: 25px;
+}
+.projects-container {
+  margin-left: 60px;
+  margin-right: 10px;
+  margin-top: 20px; 
+}
+.projects-container div{
+  margin:20px;
+  float: left;
+  height: 170px;
+  width:300px;
+  transition: .3s;
+  box-shadow: 2px 2px 2px gray;
+  position: relative;
+}
+.projects-container div:hover{
+  transform: translateY(0.3em);
+}
+.projects-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+span.text-content {
+  padding-top: 50px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+.projects-container div:hover span.text-content {
+  opacity: 1;
+}
+
+
+#contact {
+  height: 40px;
+}
+@media(max-width: 980px) {
+
+  #projects {
+    height: 100vh;
+  }
+}
+@media (max-width: 698px) {
+  #aboutme {
+    height: 100vh;
+  }
+  #projects {
+    height: 180vh;
+  }
+
+}
+
+@media(max-width: 500px) {
+  #home h1 {
+    font-size: 4em;
+  }
+  #home h4 {
+    font-size: 1.6em;
+  }
+}
+
