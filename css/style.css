@@ -104,7 +104,7 @@ ul {
 }
 
 #aboutme {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +159,7 @@ ul {
 }
 
 #projects {
-  height: 70vh;
+  height: 80vh;
   background-color: aliceblue;
   opacity: 0.5px;
   overflow: hidden;
@@ -215,7 +215,7 @@ span.text-content {
 
 
 #contact {
-  height: 40px;
+  height: 45px;
 }
 @media(max-width: 980px) {
 
